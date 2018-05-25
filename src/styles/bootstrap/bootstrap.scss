@@ -1,0 +1,12 @@
+$enable-rounded: false;
+// $enable-shadows: true;
+$grid-columns: 10;
+$grid-gutter-width-base : 2rem;
+//@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
+@import 'card';
+.w-3-1 {
+    flex: 0 0 (100%/3);
+    max-width: (100%/3);
+}

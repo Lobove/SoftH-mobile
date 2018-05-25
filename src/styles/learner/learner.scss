@@ -1,0 +1,306 @@
+/*
+ * @Author: mozhengqian
+ * @Date: 2017-12-14 12:26:54
+ * @Last Modified by: jinmiaomiao
+ * @Last Modified time: 2018-05-15 17:31:10
+ */
+
+@import '_common.scss';
+html,
+body {
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", arial, \5b8b\4f53, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    background-color: #efefef;
+    height: unset !important;
+}
+// 图片 展示 pc mobile
+.position-relative{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+a {
+    &:hover {
+        color: #292b2c;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.text-white {
+    a,
+    a:hover {
+        color: #fff;
+    }
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+input,
+textarea,
+a,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+a {
+    text-decoration: none !important;
+    &:hover {
+        text-decoration: none !important;
+    }
+    &:active {
+        text-decoration: none !important;
+    }
+    &:visited {
+        text-decoration: none !important;
+    }
+    &:focus {
+        text-decoration: none !important;
+    }
+}
+
+.ant-btn {
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        box-shadow: none;
+    }
+}
+
+.ant-btn-primary {
+    background: $comcolor !important;
+    border-color: $comcolor !important;
+    &:focus,
+    &:hover,
+    &:active,
+    &:visited {
+        background-color: $comcolor !important;
+        border-color: $comcolor !important;
+        color: #fff !important;
+    }
+}
+
+.ant-input-affix-wrapper {
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        .ant-input:not(.ant-input-disabled) {
+            border-color: $comcolor !important;
+            box-shadow: none;
+        }
+    }
+    .ant-input {
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+            border-color: $comcolor!important;
+            box-shadow: none;
+        }
+    }
+}
+
+.ant-input-wrapper {
+    .ant-input {
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+            border-color: $comcolor !important;
+            box-shadow: none;
+        }
+    }
+}
+
+.ant-checkbox-wrapper {
+    &:hover .ant-checkbox-inner,
+    .ant-checkbox :hover .ant-checkbox-inner,
+    .ant-checkbox-input:focus+.ant-checkbox-inner {
+        border-color: $comcolor !important;
+    }
+}
+
+.ant-checkbox-checked {
+    .ant-checkbox-inner,
+    .ant-checkbox-indeterminate .ant-checkbox-inner {
+        background-color: $comcolor !important;
+        border-color: $comcolor !important;
+    }
+}
+
+.ant-checkbox-indeterminate {
+    .ant-checkbox-inner {
+        background-color: $comcolor !important;
+        border-color: $comcolor !important;
+    }
+}
+
+.ant-radio-wrapper {
+    &:hover .ant-radio-inner,
+    .ant-radio :hover .ant-radio-inner,
+    .ant-radio-input:focus+.ant-radio-inner {
+        border-color: $comcolor !important;
+    }
+}
+
+.ant-radio-checked {
+    .ant-radio-inner {
+        border-color: $comcolor !important;
+        &:hover {
+            border-color: $comcolor !important;
+        }
+        &::after {
+            background: $comcolor !important;
+        }
+    }
+}
+
+.ant-select-selection {
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        box-shadow: none;
+        border-color: $comcolor !important;
+    }
+}
+
+.ant-select-open .ant-select-selection {
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        box-shadow: none;
+        border-color: $comcolor !important;
+    }
+    box-shadow: none !important;
+    border-color: $comcolor !important;
+}
+
+.ant-pagination {
+    .ant-pagination-prev {
+        &:hover {
+            border-color: $comcolor;
+        }
+        &:hover a {
+            color: $comcolor;
+        }
+    }
+    .ant-pagination-next {
+        &:hover {
+            border-color: $comcolor;
+        }
+        &:hover a {
+            color: $comcolor;
+        }
+    }
+    .ant-pagination-item {
+        &:focus,
+        &:hover,
+        &:active,
+        &:visited {
+            border-color: $comcolor;
+        }
+        &:hover a {
+            color: $comcolor;
+        }
+    }
+    .ant-pagination-item-active {
+        background-color: $comcolor !important;
+        border-color: $comcolor;
+        &:focus,
+        &:hover,
+        &:active,
+        &:visited {
+            background-color: $comcolor !important;
+            border-color: $comcolor;
+        }
+        &:hover a {
+            color: #fff;
+        }
+    }
+}
+
+.ant-spin {
+    color: $comcolor !important;
+    .ant-spin-dot {
+        i {
+            background-color: $comcolor !important;
+        }
+    }
+}
+
+.nz-overlay-container {
+    .wechat-li-box {
+        .ant-dropdown-menu {
+            border: none;
+        }
+        .ant-dropdown-menu-submenu-title {
+            padding: 0;
+            &:hover {
+                background-color: none!important;
+            }
+            &:after {
+                content: '\e620';
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.ellipsis-1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ellipsis-all {
+    position: relative;
+    line-height: 1.4em; // height: 4.2em;
+    overflow: hidden;
+    &:after {
+        content: "...";
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0 20px 1px 45px;
+        background: url('../../assets/learner/ellipsis_bg.png') repeat-y;
+    }
+}

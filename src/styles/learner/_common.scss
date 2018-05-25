@@ -1,0 +1,59 @@
+$radius: 5px;
+$comcolor: #e60013; //主题颜色i*I rgb(214, 0, 15)
+$color-hover:#D30909; //鼠标滑入
+$defaultColor: #666;
+$bgColor: #f7f5f5; //页面背景色
+$c333: #333;
+$c666: #666;
+$c888: #888;
+$size24: .24rem;
+$pdf:rgb(172, 25, 41);
+$txt:rgb(0, 160, 238);
+$file:rgb(182, 182, 182);
+$pptcolor:#f25022;
+$wordcolor:#2f5fa3;
+$excel:#1b7243;
+$line-off:#eaeaea; // 分割线
+$color-danger:#ff0000; //辅助色1
+$color-assist:#f29507; //辅助色2
+$color-face:#2da2ff; // 面授
+$redColor: #e60013; //公共颜色
+.icon-ppt {
+    color: $pptcolor;
+}
+
+.icon-word {
+    color: $wordcolor;
+}
+
+.icon-excel {
+    color: $excel;
+}
+
+.icon-file {
+    color: $file;
+}
+
+.icon-pdf {
+    color: $pdf;
+}
+
+.icon-txt {
+    color: $txt;
+}
+
+$t-hover: all 0.3s ease-in-out;
+$boxshadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+$boxhover: 0 5px 20px rgba(0, 0, 0, 0.3);
+.hover-shadow {
+    transition: $t-hover;
+    &:hover {
+        box-shadow: $boxhover;
+    }
+}
+
+.text-flow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
